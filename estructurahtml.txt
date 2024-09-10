@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Etiquetas para el SEO -->
 
@@ -33,29 +33,12 @@
 
     </header>
     <main>
-            <!-- Formulario de Logueo -->
-            <div class="formulario">
-                <form action="" method="post">
-                    <!-- Email -->
-                    <label for="email">Ingrese su Email:</label>
-                    <input type="email" name="email" id="email">
 
-                    <!-- Contraseña -->
-                    <label for="clave"></label>
-                    <input type="password" name="clave" id="clave">
-
-                    <!-- Botón -->
-                    <input type="submit" value="Iniciar Sesión" name="ingresar">
-
-                    <!-- Link para crear cuenta -->
-                    <a href="crearusuario.php">¿No tienes cuenta?¡Haz click aquí para registrarte!</a>
-                </form>
-            </div>
     </main>
     <footer>
         <div>
            <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
         </div>
-    </footer>
+   </footer>
 </body>
 </html>
