@@ -34,7 +34,7 @@
     </header>
     <main>
             <!-- Formulario de Logueo -->
-            <div class="formulario">
+            <div class="form-login">
                 <form action="" method="post">
                     <!-- Email -->
                     <label for="email">Ingrese su Email:</label>
