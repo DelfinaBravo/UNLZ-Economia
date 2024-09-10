@@ -1,3 +1,4 @@
 <php 
-    $conexion = mysqli_connect("localhost","root","","unlz");
+    $conexion = mysqli_connect("localhost","root","","ecounlz");
+    echo "conectado";
 ?>

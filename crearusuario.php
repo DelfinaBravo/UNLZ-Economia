@@ -28,6 +28,9 @@
     <title>Univerdad de Economía</title>
 </head>
 <body>
+    <?php 
+        include("Acciones/altausuario.php");
+    ?>
     <!-- Metodología BEM -->
     <header>
     
