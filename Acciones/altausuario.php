@@ -1,13 +1,13 @@
 <?php 
     include("ConexionBD.php");
-    echo "asd";
-    //$conexion = mysqli_connect("localhost","root","","ecounlz");
-    if(isset($_POST["carrera"])){
+    
+    $conexion = mysqli_connect("localhost","root","","ecounlz");
+    if(!empty($_POST["crear"])){
+       if(!empty($_POST["DNI"])){
+            $DNI = $_POST["DNI"];
+            $consulta=$conexion->query("INSERT INTO Usuarios(DNI) VALUES ('$DNI')");
 
-        
+       }
     }
-    else{
-        //Error xq no se selecciono ninguna carrera
-        echo "debe seleccionar una carrera";
-    }
+   
 ?>

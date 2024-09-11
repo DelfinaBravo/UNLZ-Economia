@@ -29,6 +29,8 @@
 </head>
 <body>
     <?php 
+            $conexion = mysqli_connect("localhost","root","","ecounlz");
+
         include("Acciones/altausuario.php");
     ?>
     <!-- Metodología BEM -->
@@ -38,38 +40,33 @@
     <main>
         <!-- Formulario para crear usuario -->
         <div class="form-crearusuario">
-            <!-- DNI -->
-            <label for="DNI">Ingrese su DNI:</label>
-            <input type="number" name="DNI" id="DNI">
+            <form action="" method="post">
+                    <!-- DNI -->
+                <label for="DNI">Ingrese su DNI:</label>
+                <input type="number" name="DNI" id="DNI">
 
-            <!-- Nombre -->
-            <label for="Nombre">Ingrese su Nombre:</label>
-            <input type="text" name="Nombre" id="Nombre">
+                <!-- Nombre -->
+                <label for="Nombre">Ingrese su Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
 
-            <!-- Apellido -->
-            <label for="Apellido">Ingrese su Apellido:</label>
-            <input type="text" name="Apellido" id="Apellido">
+                <!-- Apellido -->
+                <label for="Apellido">Ingrese su Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido">
 
-            <!-- Carrera -->
-            <label for="carrera">Selecciona tu carrera:</label>
-            <select name="carrera[]" id="carrera" multiple size="2">
-                <option value="contador_publico">Contador Público</option>
-                <option value="licenciado_administracion">Licenciado en Administración</option>
-            </select>
-            <!-- Correo -->
-            <label for="Email">Ingrese su Email:</label>
-            <input type="email" name="Email" id="Email">
+                <!-- Correo -->
+                <label for="Email">Ingrese su Email:</label>
+                <input type="email" name="Email" id="Email">
 
-            <!-- Clave -->
-            <label for="Clave">Ingrese su Contraseña:</label>
-            <input type="password" name="Clave" id="Clave">
+                <!-- Clave -->
+                <label for="Clave">Ingrese su Contraseña:</label>
+                <input type="password" name="Clave" id="Clave">
 
-            <!-- Botón -->
-            <input type="submit" value="Crear Cuenta" name="crear">
+                <!-- Botón -->
+                <input type="submit" value="Crear Cuenta" name="crear">
 
-            <!-- Link por si ya tiene cuenta -->
-            <a href="loginusuario.php">¡Si tienes cuenta, Haz click aquí!</a>
-
+                <!-- Link por si ya tiene cuenta -->
+                <a href="loginusuario.php">¡Si tienes cuenta, Haz click aquí!</a>
+            </form>
         </div>
     </main>
     <footer>
