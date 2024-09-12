@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    background-color:#A60A6C;
+    height: 80px;    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    margin-top: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(5px); /* Aplicar el efecto de difuminado */   
+}
+
+.links a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #2c001b;
+
+}
+
+.logo{
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.sector{
+    margin:100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sector a{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #154472;
+    color: rgb(255, 255, 255);
+    padding: 30px; 
+}
+
+.sector a:hover{
+    background-color: #8aadcf;
+    color: #154472;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px);
+}
+
+
+footer{
+    height: 400px;
+    background-color: #565656;
+}
+footer .derechos{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+footer .derechos a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+footer .derechos a:hover{
+    color: #001020;
+}
+
+.grid{
+    color: rgb(255, 255, 255);
+    margin-left: 260px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.item {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info{
+    margin-left: -60px;
+    font-weight: normal;
+    font-size: 15px;
+}
+.redes{
+    margin-left: -40px;
+}
+
+.mapa{
+   margin-left: -105px;
+}
