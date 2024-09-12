@@ -40,12 +40,12 @@
             <div class="form-login">
                 <form action="" method="post">
                     <!-- Email -->
-                    <label for="email">Ingrese su Email:</label>
-                    <input type="email" name="email" id="email">
+                    <label for="Email">Ingrese su Email:</label>
+                    <input type="email" name="Email" id="email">
 
                     <!-- Contraseña -->
-                    <label for="clave"></label>
-                    <input type="password" name="clave" id="clave">
+                    <label for="Clave"></label>
+                    <input type="password" name="Clave" id="clave">
 
                     <!-- Botón -->
                     <input type="submit" value="Iniciar Sesión" name="ingresar">

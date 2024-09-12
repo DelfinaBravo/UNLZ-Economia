@@ -19,18 +19,19 @@
 
         if ($consulta->num_rows === 1) {
             // El usuario existe, verificar la contraseña
-            $consulta->bind_result($hashedPassword);
+            $consulta->bind_result($clavehasheada);
             $consulta->fetch();
 
-            if (password_verify($Clave, $hashedPassword)) {
-                
+            if (password_verify($Clave, $clavehasheada)) {
+                //Camino si la consulta sale bien
+                header("Location:index.html");
                 exit();
             }
         }
 
-        // En caso de error, redirigir a la misma página de inicio de sesión
-        header("Location: index.php"); // Redirigir a la misma página de inicio de sesión
+       
+      
         exit();
     }
 ?>
-?>
+
