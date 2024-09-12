@@ -70,6 +70,33 @@ nav{
 }
 
 
+#carouselExampleControlsNoTouching{
+    padding: 50px;
+}
+
+.nosotros, .novedades{
+    background-color: #A60A6C;
+    margin: 50px;
+}
+
+.nosotros h3, .novedades h3{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.nosotros p, .novedades .linea{
+    text-align: center;
+    color: #ffffff;
+}
+
+.noticias{
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+}
+
 footer{
     height: 400px;
     background-color: #565656;
@@ -90,6 +117,10 @@ footer .derechos a:hover{
     color: #001020;
 }
 
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tres columnas de igual tamaño */
+}
 .grid{
     color: rgb(255, 255, 255);
     margin-left: 260px ;
@@ -107,7 +138,7 @@ footer .derechos a:hover{
 .info{
     margin-left: -60px;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 17px;
 }
 .redes{
     margin-left: -40px;
