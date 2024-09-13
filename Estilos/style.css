@@ -92,9 +92,10 @@ nav{
 }
 
 .noticias{
-    background-color: #ffffff;
+    background-color: #ffffff;   
     margin: 10px;
     padding: 20px;
+    justify-content: center;
 }
 
 footer{
@@ -147,3 +148,11 @@ footer .derechos a:hover{
 .mapa{
    margin-left: -105px;
 }
+.novedades{
+    width: 80%;
+}
+.noticias{
+
+}
+
+
