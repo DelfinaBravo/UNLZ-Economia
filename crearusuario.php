@@ -29,9 +29,9 @@
 </head>
 <body>
     <?php 
-            $conexion = mysqli_connect("localhost","root","","ecounlz");
 
         include("Acciones/altausuario.php");
+        
     ?>
     <!-- Metodología BEM -->
     <header>
@@ -62,7 +62,7 @@
                 <input type="password" name="Clave" id="Clave">
                 <!-- Confirmar Clave -->
                 <label for="Clave">Ingrese su Contraseña nuevamente:</label>
-                <input type="password" name="Clave2" id="Clave">
+                <input type="password" name="Clave2" id="Clave2">
 
                 <!-- Botón -->
                 <input type="submit" value="Crear Cuenta" name="crear">
