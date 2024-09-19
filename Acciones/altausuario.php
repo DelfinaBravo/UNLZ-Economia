@@ -3,9 +3,7 @@
     if (mysqli_connect_error()) {
         echo "Error de conexión: " . mysqli_connect_error();
         exit();
-    } else {
-        echo "Conectado a la base de datos con éxito!";
-    }
+    } 
     
 
     if(!empty($_POST["crear"])){
@@ -13,7 +11,7 @@
             $DNI = $_POST["DNI"];
             $Nombre = $_POST["Nombre"];
             $Apellido = $_POST["Apellido"];
-            $Correo = $_POST["Email"];
+            $Email = $_POST["Email"];
             $Clave = $_POST["Clave"];
             $Clave2= $_POST["Clave2"];
 
@@ -56,8 +54,6 @@
                     // Ejecutar la consulta
                     if($consulta->execute()){
                         echo "Usuario registrado exitosamente.";
-                    }else {
-                        echo "Error al registrar el usuario: " . $consulta->error;
                     }
 
                     // Cerrar la consulta y la conexión
