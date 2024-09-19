@@ -31,7 +31,7 @@
 <?php 
     session_start();
     
-    if(!isset($_SESSION['Clave'])){
+    if(!isset($_SESSION['Email'])){
         echo '
             <script>
                 alert("Debes iniciar sesion antes de entrar a esta pagina");

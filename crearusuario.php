@@ -60,6 +60,7 @@
                 <!-- Clave -->
                 <label for="Clave">Ingrese su Contraseña:</label>
                 <input type="password" name="Clave" id="Clave">
+                
                 <!-- Confirmar Clave -->
                 <label for="Clave">Ingrese su Contraseña nuevamente:</label>
                 <input type="password" name="Clave2" id="Clave">

@@ -26,9 +26,8 @@
             if (password_verify($Clave, $clavehasheada)) {
                  // Si la contraseña es correcta, almacenar Email y Clave en la sesión
                 $_SESSION['Email'] = $Email; // Guardar el email en la sesión
-                $_SESSION['Clave'] = $Clave;  // Guardar la clave en la sesión (esto no es recomendable por motivos de seguridad)
             
-            // Redirigir al usuario a otra página
+                // Redirigir al usuario a otra página
                 header("Location: VistasUsuario/inicioU.php");
                 exit();
             }
