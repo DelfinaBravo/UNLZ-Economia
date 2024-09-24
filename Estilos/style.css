@@ -156,8 +156,11 @@ footer .derechos a:hover{
 }
 
 /* ----------------- LOGIN INICIO -------------------- */
+/* .body{
+    background-color: #A60A6C;
+} */
 .form-login{
-    background-color:#fafafa;
+    background-color:#A60A6C;
     width: 40%;
     display: flex;
     margin: auto;
@@ -167,6 +170,12 @@ footer .derechos a:hover{
     box-shadow: 5px 5px 8px rgb(182, 182, 182);
 }
 
+.form-login img{
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    margin-left: 20px;
+}
 .form-login:hover{
     scale: 1.1;
 }
@@ -180,23 +189,24 @@ footer .derechos a:hover{
     margin: auto;
     justify-content: center;
     padding: 40px;
-    color: #154472;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .casilleros input{
     background: none;
     border: none;
-    border-bottom: solid 1px #154472;
+    border-bottom: solid 1px #ffffff;
     outline:none;
     font-size: 17px;
     color:#154472;
     margin-left: 5px;
+    width: 120%;
     
 }
 
 input::placeholder{
-    color:#94acc5;
+    color:#bbc7d3;
 }
 
 .botonusuario, .linkusuario{
@@ -213,7 +223,7 @@ input::placeholder{
     border: none;
     padding: 15px;
     font-size: 15px;
-    color: #a2c9f0;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -223,10 +233,16 @@ input::placeholder{
     scale: 1.1;
 }
 
+.linkusuario{
+    font-size: 15px;
+    text-align: center;  
+}
+
 .linkusuario, a{
-    color: #6890b8;
+    color: #b1bfce;
+    
 }
 
 .linkusuario a:hover{
-  color: #022b53;
+  color: #ffffff;
 }

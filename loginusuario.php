@@ -30,7 +30,7 @@
     <!-- Link Iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body class="body">
     <?php 
         include("Acciones/login.php");
     ?>
@@ -41,6 +41,7 @@
     <main>
             <!-- Formulario de Logueo -->
             <div class="form-login">
+                <img src="Media/logoUNLZ.jpeg" alt="" width="200px">
                 <form action="" method="post">
                     <div class="casilleros">
                          <!-- Email -->
