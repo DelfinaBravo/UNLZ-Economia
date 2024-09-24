@@ -26,6 +26,9 @@
 
     <!-- Título -->
     <title>Univerdad de Economía</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <!-- Link Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <?php 
@@ -39,26 +42,35 @@
             <!-- Formulario de Logueo -->
             <div class="form-login">
                 <form action="" method="post">
-                    <!-- Email -->
-                    <label for="Email">Ingrese su Email:</label>
-                    <input type="email" name="Email" id="email">
-
-                    <!-- Contraseña -->
-                    <label for="Clave"></label>
-                    <input type="password" name="Clave" id="clave">
-
-                    <!-- Botón -->
-                    <input type="submit" value="Iniciar Sesión" name="ingresar">
-
-                    <!-- Link para crear cuenta -->
-                    <a href="crearusuario.php">¿No tienes cuenta?¡Haz click aquí para registrarte!</a>
+                    <div class="casilleros">
+                         <!-- Email -->
+                        <!-- <label for="Email">Ingrese su Email:</label> -->
+                        <input type="email" name="Email" id="email" placeholder="Ingrese su Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="casilleros">
+                            <!-- Contraseña -->
+                        <!-- <label for="Clave">Ingrese su Contraseña:</label> -->
+                        <input type="password" name="Clave" id="clave" placeholder="Ingrese su Contraseña">
+                        <i class="fa-solid fa-lock"></i>                   
+                    </div>
+                    <div class="botonusuario">
+                            <!-- Botón -->
+                        <input type="submit" value="Iniciar Sesión" name="ingresar">
+                    </div>
+                    <div class="linkusuario">
+                         <!-- Link para crear cuenta -->
+                    <p>¿No tienes cuenta? <a href="crearusuario.php"> ¡Haz click aquí para registrarte!</a></p>
+                    
+                   
+                    </div>
                 </form>
             </div>
     </main>
-    <footer>
+    <!-- <footer>
         <div>
            <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
