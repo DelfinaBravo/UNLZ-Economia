@@ -184,6 +184,7 @@ footer .derechos a:hover{
     width: 100%;   
     margin-top: 20px;
 }
+
 .form-login form .casilleros{
     display: flex;
     margin: auto;
@@ -199,9 +200,9 @@ footer .derechos a:hover{
     border-bottom: solid 1px #ffffff;
     outline:none;
     font-size: 17px;
-    color:#154472;
+    color:#ffffff;
     margin-left: 5px;
-    width: 120%;
+    width: 125%;
     
 }
 
