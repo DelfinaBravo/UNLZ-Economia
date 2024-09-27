@@ -1,7 +1,8 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Etiquetas para el SEO -->
 
@@ -28,55 +29,17 @@
     <title>Univerdad de Economía</title>
 </head>
 <body>
-    <?php 
-
-        include("Acciones/altausuario.php");
-        
-    ?>
     <!-- Metodología BEM -->
     <header>
-    
+
     </header>
     <main>
-        <!-- Formulario para crear usuario -->
-        <div class="form-crearusuario">
-            <form action="" method="post">
-                    <!-- DNI -->
-                <label for="DNI">Ingrese su DNI:</label>
-                <input type="number" name="DNI" id="DNI">
-
-                <!-- Nombre -->
-                <label for="Nombre">Ingrese su Nombre:</label>
-                <input type="text" name="nombre" id="Nombre">
-
-                <!-- Apellido -->
-                <label for="Apellido">Ingrese su Apellido:</label>
-                <input type="text" name="apellido" id="Apellido">
-
-                <!-- Correo -->
-                <label for="Email">Ingrese su Email:</label>
-                <input type="email" name="email" id="Email">
-
-                <!-- Clave -->
-                <label for="Clave">Ingrese su Contraseña:</label>
-                <input type="password" name="clave" id="Clave">
-                
-                <!-- Confirmar Clave -->
-                <label for="Clave">Ingrese su Contraseña nuevamente:</label>
-                <input type="password" name="clave2" id="Clave2">
-
-                <!-- Botón -->
-                <input type="submit" value="Crear Cuenta" name="crear">
-
-                <!-- Link por si ya tiene cuenta -->
-                <a href="loginusuario.php">¡Si tienes cuenta, Haz click aquí!</a>
-            </form>
-        </div>
+        <h1>Bienvenido Administrador <?php echo $_SESSION['nombre_completo'];?> </h1>
     </main>
     <footer>
         <div>
            <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
         </div>
-    </footer> 
+   </footer>
 </body>
 </html>

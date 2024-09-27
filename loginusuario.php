@@ -45,14 +45,12 @@
                 <form action="" method="post">
                     <div class="casilleros">
                          <!-- Email -->
-                        <!-- <label for="Email">Ingrese su Email:</label> -->
-                        <input type="email" name="Email" id="email" placeholder="Ingrese su Email">
+                        <input type="email" name="email" id="email" placeholder="Ingrese su Email">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="casilleros">
                             <!-- Contraseña -->
-                        <!-- <label for="Clave">Ingrese su Contraseña:</label> -->
-                        <input type="password" name="Clave" id="clave" placeholder="Ingrese su Contraseña">
+                        <input type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña">
                         <i class="fa-solid fa-lock"></i>                   
                     </div>
                     <div class="botonusuario">
