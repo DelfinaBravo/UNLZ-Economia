@@ -153,9 +153,10 @@ footer .derechos a:hover{
 }
 
 /* ----------------- LOGIN INICIO -------------------- */
-/* .body{
-    background-color: #A60A6C;
-} */
+.body{
+    background-color: #cfe4f8;
+} 
+
 .form-login{
     background-color:#A60A6C;
     width: 40%;
@@ -164,7 +165,63 @@ footer .derechos a:hover{
     border-radius: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
-    box-shadow: 5px 5px 8px rgb(182, 182, 182);
+    box-shadow: 5px 5px 8px #a2c9f0;
+}
+
+@media (max-width: 400px) {
+    .form-login {
+        width: 80%; /* Reduce el ancho en pantallas pequeñas */
+    }
+
+    .form-login img{
+        display: block;
+        justify-content: center;
+        margin: auto;
+        width: 100px;
+    }
+
+    .form-login .casilleros{
+        width: 100%;
+    }
+
+    .casilleros input::placeholder{
+        font-size: 13px;
+    }
+
+    .linkusuario p, a{
+        width: 100%;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    .linkusuario a{
+        display: block;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .form-login {
+        width: 80%;
+        /* Casi todo el ancho en pantallas muy pequeñas */
+    }
+
+    .casilleros input::placeholder{
+        font-size: 12px;
+    }
+
+    .form-login .casilleros input{
+        font-size: 15px;
+    }
+
+    .botonusuario input{
+       scale: 0.8;
+       margin: 0;
+    }
+
+    .botonusuario input:hover{
+        scale: 0.9;
+    }
 }
 
 .form-login img{

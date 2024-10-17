@@ -25,7 +25,7 @@
     <meta name="description" content="Proyecto educativo para mejorar la página de Economía de la UNLZ realizado por estudiantes de la Técnica N*1 de Esteban Echeverría.">
 
     <!-- Título -->
-    <title>Univerdad de Economía</title>
+    <title>Universidad de Economía</title>
     <link rel="stylesheet" href="Estilos/style.css">
     <!-- Link Iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -57,11 +57,11 @@
                     </div>
                     <div class="botonusuario">
                             <!-- Botón -->
-                        <input type="submit" value="Iniciar Sesión" name="ingresar">
+                        <input class="botonusuario" type="submit" value="Iniciar Sesión" name="ingresar">
                     </div>
                     <div class="linkusuario">
                          <!-- Link para crear cuenta -->
-                    <p>¿No tienes cuenta? <a href="crearusuario.php"> ¡Haz click aquí para registrarte!</a></p>
+                    <p>¿No tienes cuenta? <a href="crearusuario.php"> ¡Registrate!</a></p>
                     
                    
                     </div>
