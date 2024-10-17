@@ -45,12 +45,16 @@
                 <form action="" method="post">
                     <div class="casilleros">
                          <!-- Email -->
-                        <input type="email" name="email" id="email" placeholder="Ingrese su Email">
+                         <!-- required pattern es para garantizar que el email tenga un formato valido. -->
+                        <input type="email" name="email" id="email" placeholder="Ingrese su Email"
+                        required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="casilleros">
                             <!-- Contraseña -->
-                        <input type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña">
+                            <!-- required minlength es para que tenga que ingresar minimo 8 caracteres -->
+                        <input type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña"
+                        required minlength="8">
                         <i class="fa-solid fa-lock"></i>                   
                     </div>
                     <div class="botonusuario">
