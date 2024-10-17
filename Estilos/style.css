@@ -98,7 +98,13 @@ nav{
     justify-content: center;
 }
 
+.noticias img{
+    display: flex;
+    margin: auto;
+}
+
 footer{
+    margin-top: 5%;
     height: 400px;
     background-color: #565656;
 }
@@ -120,14 +126,13 @@ footer .derechos a:hover{
 
 .grid2{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Tres columnas de igual tamaño */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
 }
 .grid{
     color: rgb(255, 255, 255);
     margin-left: 260px ;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    gap: 10px; /* Espacio entre los elementos */
 }
 
 .item {
@@ -149,7 +154,9 @@ footer .derechos a:hover{
    margin-left: -105px;
 }
 .novedades{
-    width: 80%;
+    margin: auto;
+    justify-content: center;
+    width: 90%;
 }
 
 /* ----------------- LOGIN INICIO -------------------- */
