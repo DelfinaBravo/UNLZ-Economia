@@ -37,8 +37,12 @@
  
     if (!empty($_POST["ingresar"])) {
         // Obtener valores del formulario
-        $email = $_POST["email"];
-        $clave = $_POST["clave"];
+        // "trim" elimina los espacios en blanco al final y al principio del string.
+        // "filter_var()" se utiliza para tomar la variable y filtrarlo segun lo que le este 
+        // pidiendo en este caso "FILTER_VALIDATE_EMAIL" que es para que pueda
+        // ingresar un valor valido de Email.
+        $email = filter_var(trim($_POST["email"]), FILTER_VALIDATE_EMAIL);
+        $clave = trim($_POST["clave"]);
 
         // Preparar la consulta para obtener la contraseña encriptada del usuario
         $consulta = $conexion->prepare("SELECT clave FROM Usuarios WHERE email = ?");
