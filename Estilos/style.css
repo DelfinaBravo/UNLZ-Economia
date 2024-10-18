@@ -236,3 +236,44 @@ footer .derechos a:hover{
 .linkusuario a:hover {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
+
+.bienvenidoAdmin{
+    display:inline-flex;
+    margin: auto;
+    font-size: 10px;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: #673f69;
+}
+
+.custom-icon {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+
+.gestion{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.horarios, .alumnos{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #eee6ee;
+}
+
+.horarios a, .alumnos a{
+    padding: 100px;
+    color: #673f69;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.horarios a:hover, .alumnos a:hover{
+    background-color: #ceafcf;
+}
+
