@@ -25,7 +25,7 @@
     <meta name="description" content="Proyecto educativo para mejorar la página de Economía de la UNLZ realizado por estudiantes de la Técnica N*1 de Esteban Echeverría.">
 
     <!-- Título -->
-    <title>Univerdad de Economía</title>
+    <title>Universidad de Economía</title>
 </head>
 <body>
 <?php 

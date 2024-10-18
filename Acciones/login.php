@@ -34,11 +34,6 @@
             }
             $consulta->close();
         }
-
-    
-
-
-  
  
     if (!empty($_POST["ingresar"])) {
         // Obtener valores del formulario
@@ -61,7 +56,7 @@
                 $_SESSION['email'] = $email; // Guardar el email en la sesión
             
                 // Redirigir al usuario a otra página
-                header("Location: VistasUsuario/inicioU.php");
+                header("Location: index.html");
                 exit();
             }
         }

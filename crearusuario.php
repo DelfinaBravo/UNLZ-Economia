@@ -25,6 +25,7 @@
     <meta name="description" content="Proyecto educativo para mejorar la página de Economía de la UNLZ realizado por estudiantes de la Técnica N*1 de Esteban Echeverría.">
 
     <!-- Título -->
+    <link rel="stylesheet" href="Estilos/style.css">
     <title>Univerdad de Economía</title>
 </head>
 <body>
@@ -40,36 +41,49 @@
     <main>
         <!-- Formulario para crear usuario -->
         <div class="form-crearusuario">
+        <img src="Media/logoUNLZ.jpeg" alt="" width="200px">
             <form action="" method="post">
+
+                <div class="casilleross">
                     <!-- DNI -->
-                <label for="DNI">Ingrese su DNI:</label>
-                <input type="number" name="DNI" id="DNI">
+                    <input type="number" name="DNI" id="DNI" placeholder="Ingrese su DNI">
+                </div>
 
-                <!-- Nombre -->
-                <label for="Nombre">Ingrese su Nombre:</label>
-                <input type="text" name="nombre" id="Nombre">
+                <div class="casilleross">
+                    <!-- Nombre -->
+                    <input type="text" name="nombre" id="Nombre" placeholder="Ingrese su Nombre">
+                </div>
 
-                <!-- Apellido -->
-                <label for="Apellido">Ingrese su Apellido:</label>
-                <input type="text" name="apellido" id="Apellido">
+                <div class="casilleross">
+                    <!-- Apellido -->
+                    <input type="text" name="apellido" id="Apellido" placeholder="Ingrese su Apellido">
+                </div>
 
-                <!-- Correo -->
-                <label for="Email">Ingrese su Email:</label>
-                <input type="email" name="email" id="Email">
+                <div class="casilleross">
+                    <!-- Correo -->
+                    <input type="email" name="email" id="Email" placeholder="Ingrese su Email">
+                </div>
 
-                <!-- Clave -->
-                <label for="Clave">Ingrese su Contraseña:</label>
-                <input type="password" name="clave" id="Clave">
-                
-                <!-- Confirmar Clave -->
-                <label for="Clave">Ingrese su Contraseña nuevamente:</label>
-                <input type="password" name="clave2" id="Clave2">
+                <div class="casilleross">
+                    <!-- Clave -->
+                    <input type="password" name="clave" id="Clave" placeholder="Ingrese su contraseña">
+                </div>
 
-                <!-- Botón -->
-                <input type="submit" value="Crear Cuenta" name="crear">
+                <div class="casilleross">
+                    <!-- Confirmar Clave -->
+                    <input type="password" name="clave2" id="Clave2" placeholder="Confirme su contraseña">
+                </div>
 
-                <!-- Link por si ya tiene cuenta -->
-                <a href="loginusuario.php">¡Si tienes cuenta, Haz click aquí!</a>
+                <div class="botonusuario">
+                    <!-- Botón -->
+                    <input type="submit" value="Crear Cuenta" name="crear">
+                </div>
+
+                <div class="linkusuario">
+                    <!-- Link por si ya tiene cuenta -->
+                    <p>¡Si tienes una cuenta,<a href="loginusuario.php"> Haz click aquí!</a></p>
+                </div>
+              
             </form>
         </div>
     </main>
