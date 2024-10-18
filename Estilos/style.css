@@ -159,245 +159,80 @@ footer .derechos a:hover{
     width: 90%;
 }
 
-/* ----------------- LOGIN INICIO -------------------- */
-.body{
-    background-color: #cfe4f8;
-} 
+.body {
+    height: 100vh;
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #ffffff;
+}
 
-/* FORMULARIO DE CREAR USUARIO */
-
-.form-crearusuario{
-    background-color:#A60A6C;
-    width: 60%;
+.form-login {
     display: flex;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    box-shadow: 5px 5px 8px #a2c9f0;
-}
-
-.form-login{
-    background-color:#A60A6C;
-    width: 40%;
-    display: flex;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    box-shadow: 5px 5px 8px #a2c9f0;
-}
-
-@media (max-width: 400px) {
-    .form-login {
-        width: 80%; /* Reduce el ancho en pantallas pequeñas */
-    }
-
-    .form-login img{
-        display: block;
-        justify-content: center;
-        margin: auto;
-        width: 100px;
-    }
-
-    .form-login .casilleros{
-        width: 100%;
-    }
-
-    .casilleros input::placeholder{
-        font-size: 13px;
-    }
-
-    .linkusuario p, a{
-        width: 100%;
-        font-size: 13px;
-        justify-content: center;
-    }
-
-    .linkusuario a{
-        display: block;
-    }
-
-}
-
-@media (max-width: 300px) {
-    .form-login {
-        width: 80%;
-        /* Casi todo el ancho en pantallas muy pequeñas */
-    }
-
-    .casilleros input::placeholder{
-        font-size: 12px;
-    }
-
-    .form-login .casilleros input{
-        font-size: 15px;
-    }
-
-    .botonusuario input{
-       scale: 0.8;
-       margin: 0;
-    }
-
-    .botonusuario input:hover{
-        scale: 0.9;
-    }
-}
-
-.form-login img, .form-crearusuario img{
-    display: inline-block;
-    justify-content: center;
-    margin: auto;
-    margin-left: 20px;
-}
-.form-login:hover{
-    scale: 1.1;
-}
-
-.form-login form, .form-crearusuario form{
-    width: 100%;   
-    margin-top: 20px;
-}
-
-.form-login form .casilleros, .form-crearusuario form .casilleross{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    padding: 40px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.casilleross input{
-    background: none;
-    border: none;
-    border-bottom: solid 1px #ffffff;
-    outline:none;
-    font-size: 17px;
-    color:#ffffff;
-    margin-left: 5px;
-    width:80%;
-
-}
-
-.casilleros input{
-    background: none;
-    border: none;
-    border-bottom: solid 1px #ffffff;
-    outline:none;
-    font-size: 17px;
-    color:#ffffff;
-    margin-left: 5px;
-    width: 125%;
-    
-}
-
-input::placeholder{
-    color:#bbc7d3;
-}
-
-.botonusuario, .linkusuario{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.botonusuario input{ 
-    background-color:#154472;
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.botonusuario input:hover{
-    color: #154472;
-    background-color:#a2c9f0;
-    scale: 1.1;
-}
-
-.linkusuario{
-    font-size: 15px;
-    text-align: center;  
-}
-
-.linkusuario, a{
-    color: #b1bfce;
-    
-}
-
-.linkusuario a:hover{
-  color: #ffffff;
-}
-
-
-/* INGRESO FACULTAD */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-}
-
-.itemIngreso {
-    margin-bottom: 10px;
-}
-
-.accordion {
-    background-color: #cfe4f8;
-    color: #1a1a1a;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-    border: 1px solid #ddd;
-    font-weight: bold;
-}
-
-.accordion:hover{
-    color: #A60A6C;
-}
-
-.accordion:after {
-    content: '+';
-    font-size: 20px;
-    color: #1a1a1a;
-    float: right;
-    margin-left: 5px;
-}
-
-.accordion:hover::after{
-    color: #A60A6C;
-}
-
-.active:after {
-    content: "-";
-}
-
-/* Panel de contenido */
-.panel {
-    padding: 20px;
-    background-color: white;
-    max-height: 0; /* Oculta el panel inicialmente */
+    width: 400px;
+    height: auto;
     overflow: hidden;
-    border-left: 1px solid #cfe4f8;
-    border-right: 1px solid #cfe4f8;
-    border-bottom: 1px solid #cfe4f8; 
-    opacity: 0; /* Inicia con el contenido invisible */
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Transición para la altura y opacidad */
+    margin: auto;
+    background: #A60A6C; /* Fondo blanco para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ocupa la otra mitad del ancho */
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.form-logo{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.casilleros {
+    margin-bottom: 15px;
 }
 
-/* Panel cuando está desplegado */
-.panel.show {
-    max-height: 500px; /* Ajusta este valor según el contenido máximo que pueda tener el panel */
-    opacity: 1; /* Hace visible el contenido */
+.casilleros input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 17px;
 }
 
+.botonusuario {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    background-color: #690242; /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
 
+.botonusuario:hover {
+    background-color: #154472; /* Color al pasar el ratón */
+}
 
+.linkusuario {
+    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+    color: white;
+
+}
+.linkusuario p{
+    margin-bottom: 5px;
+}
+.linkusuario a {
+    color: #a7d1fd; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.linkusuario a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}

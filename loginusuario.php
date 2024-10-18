@@ -41,33 +41,30 @@
     <main>
             <!-- Formulario de Logueo -->
             <div class="form-login">
-                <img src="Media/logoUNLZ.jpeg" alt="" width="200px">
-                <form action="" method="post">
-                    <div class="casilleros">
-                         <!-- Email -->
-                         <!-- required pattern es para garantizar que el email tenga un formato valido. -->
-                        <input type="email" name="email" id="email" placeholder="Ingrese su Email"
-                        required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="casilleros">
-                            <!-- Contraseña -->
-                            <!-- required minlength es para que tenga que ingresar minimo 8 caracteres -->
-                        <input type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña"
-                        required minlength="8">
-                        <i class="fa-solid fa-lock"></i>                   
-                    </div>
-                    <div class="botonusuario">
-                            <!-- Botón -->
-                        <input class="botonusuario" type="submit" value="Iniciar Sesión" name="ingresar">
-                    </div>
-                    <div class="linkusuario">
-                         <!-- Link para crear cuenta -->
-                    <p>¿No tienes cuenta? <a href="crearusuario.php"> ¡Registrate!</a></p>
-                    
-                   
-                    </div>
-                </form>
+                <img src="Media/logoUNLZ.jpeg" class="form-logo" alt="" srcset="">
+                    <form action="" method="post">
+                        <div class="casilleros">
+                            <!-- Email -->
+                            <!-- required pattern es para garantizar que el email tenga un formato valido. -->
+                            <input type="email" name="email" id="email" placeholder="Ingrese su Email"
+                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="casilleros">
+                                <!-- Contraseña -->
+                                <!-- required minlength es para que tenga que ingresar minimo 8 caracteres -->
+                            <input type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña"
+                            required minlength="8">
+                        </div>
+                        <div class="botonusu">
+                                <!-- Botón -->
+                            <input class="botonusuario" type="submit" value="Iniciar Sesión" name="ingresar">
+                        </div>
+                        <div class="linkusuario">
+                            <!-- Link para crear cuenta -->
+                        <p>¿No tienes cuenta? <a href="crearusuario.php"> ¡Registrate!</a></p>
+                        <p>¿Olvidate tu contraseña? <a href="">aquí</a></p>
+                        </div>
+                    </form>
             </div>
     </main>
     <!-- <footer>
