@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="Estilos/style.css">
     <title>Univerdad de Economía</title>
 </head>
-<body>
+<body class="body">
     <?php 
 
         include("Acciones/altausuario.php");
@@ -41,7 +41,13 @@
     <main>
         <!-- Formulario para crear usuario -->
         <div class="form-crearusuario">
-        <img src="Media/logoUNLZ.jpeg" alt="" width="200px">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#A60A6C" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,176C384,203,480,213,576,192C672,171,768,117,864,106.7C960,96,1056,128,1152,160C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        </svg>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#A60A6C" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,176C384,203,480,213,576,192C672,171,768,117,864,106.7C960,96,1056,128,1152,160C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        </svg>
+                    <h1>Vamos a crear tu cuenta!</h1>
             <form action="" method="post">
 
                 <div class="casilleross">
@@ -82,16 +88,10 @@
 
                 <div class="linkusuario">
                     <!-- Link por si ya tiene cuenta -->
-                    <p>¡Si tienes una cuenta,<a href="loginusuario.php"> Haz click aquí!</a></p>
+                    <a href="loginusuario.php"> Click aca si ya tenes una cuenta!</a>
                 </div>
-              
             </form>
         </div>
     </main>
-    <footer>
-        <div>
-           <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
-        </div>
-    </footer> 
 </body>
 </html>

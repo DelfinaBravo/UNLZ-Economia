@@ -212,7 +212,7 @@ footer .derechos a:hover{
 .body{
     background-color: #fde4ff;
 }
-.form-login {
+.form-login, .form-crearusuario {
     position: relative;
     display: flex;
     width: 400px;
@@ -253,12 +253,15 @@ footer .derechos a:hover{
 
 }
 
-
 .casilleros input::placeholder{
     color: #6a4a5e;
 }
 
-.casilleros input{
+.casilleross input::placeholder{
+    color: #6a4a5e;
+}
+
+.casilleros input, .casilleross input{
     width: 100%;
     padding: 10px;
     outline: none;
@@ -267,6 +270,7 @@ footer .derechos a:hover{
     margin: 20px 0;
     border-bottom: 1px solid #410028;
     font-size: 17px;
+    color: #410028;
 }
 
 .passwordforgot{
@@ -280,7 +284,7 @@ footer .derechos a:hover{
     text-decoration: underline;
 }
 
-.botonusu input{
+.botonusu input, .botonusuario input{
     width: 40%;
     margin: auto;
     margin-top: 30px;
@@ -296,6 +300,11 @@ footer .derechos a:hover{
 }
 
 .botonusu input:hover{
+    color: #690242;
+    background-color: #ffe0f3;
+}
+
+.botonusuario input:hover{
     color: #690242;
     background-color: #ffe0f3;
 }
