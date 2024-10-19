@@ -151,7 +151,7 @@ footer .derechos a:hover{
 }
 
 .mapa{
-   margin-left: -105px;
+    margin-left: -105px;
 }
 .novedades{
     margin: auto;
@@ -165,76 +165,6 @@ footer .derechos a:hover{
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     background-color: #ffffff;
-}
-
-.form-login {
-    display: flex;
-    width: 400px;
-    height: auto;
-    overflow: hidden;
-    margin: auto;
-    background: #A60A6C; /* Fondo blanco para el formulario */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Ocupa la otra mitad del ancho */
-    padding: 30px;
-    flex-direction: column;
-    border-radius: 12px;
-}
-.form-logo{
-    width: 150px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 0px;
-}
-.casilleros {
-    margin-bottom: 15px;
-}
-
-.casilleros input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    outline: none;
-    font-size: 17px;
-}
-
-.botonusuario {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    padding: 10px;
-    background-color: #690242; /* Color de fondo */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave */
-}
-
-.botonusuario:hover {
-    background-color: #154472; /* Color al pasar el ratón */
-}
-
-.linkusuario {
-    margin-top: 20px;
-    text-align: center; /* Centra el texto */
-    color: white;
-
-}
-.linkusuario p{
-    margin-bottom: 5px;
-}
-.linkusuario a {
-    color: #a7d1fd; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
-}
-
-.linkusuario a:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
 .bienvenidoAdmin{
@@ -276,4 +206,118 @@ footer .derechos a:hover{
 .horarios a:hover, .alumnos a:hover{
     background-color: #ceafcf;
 }
+
+
+/* --------------------------------------FORMULARIOS LOGIN Y CREAR USUARIO-------------------------------------- */
+.body{
+    background-color: #fde4ff;
+}
+.form-login {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    background: #ffbfe8;
+    border-radius: 10px;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.wave {
+    position: absolute;
+    top: -20px;
+    width: 150x;
+    height: 100px; /* Ajustar para que cubra todo el ancho del formulario */
+    transform: rotate(180deg);
+    opacity: 0.3;
+
+}
+
+.waves{
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: 150x;
+    height: 100px; /* Ajustar para que cubra todo el ancho del formulario */
+    transform: rotate(180deg);
+    opacity: 0.3;
+
+}
+
+.form-login h1{
+    color: #410028;
+    margin: 10% 0;
+
+}
+
+
+.casilleros input::placeholder{
+    color: #6a4a5e;
+}
+
+.casilleros input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    margin: 20px 0;
+    border-bottom: 1px solid #410028;
+    font-size: 17px;
+}
+
+.passwordforgot{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.passwordforgot:hover{
+    color: #A60A6C;
+    text-decoration: underline;
+}
+
+.botonusu input{
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    padding: 10px;
+    background-color: #690242; /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.botonusu input:hover{
+    color: #690242;
+    background-color: #ffe0f3;
+}
+
+.linkusuario {
+    margin-top: 30px;
+    text-align: center; /* Centra el texto */
+    color:#410028;
+
+}
+.linkusuario p{
+    margin-bottom: 5px;
+}
+.linkusuario a {
+    color: #A60A6C; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.linkusuario a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+
+
 
