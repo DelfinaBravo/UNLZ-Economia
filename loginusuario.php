@@ -35,9 +35,6 @@
         include("Acciones/login.php");
     ?>
     <!-- Metodología BEM -->
-    <header>
-
-    </header>
     <main>
             <!-- Formulario de Logueo -->
             <div class="form-login">
