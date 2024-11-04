@@ -4,214 +4,256 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Urbanist", sans-serif;
 }
 
-.menu{
-    background-color:#A60A6C;
-    height: 80px;    
-}
-
-nav{
+body{
     display: flex;
-    justify-content: space-between;
+    background-color: #A60A6C;
 }
-
-.links{
-    margin-top: 30px;
-}
-
-.links a{
-    text-decoration: none;
-    list-style: none;
-    color: rgb(255, 255, 255);
-    margin-right: 50px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3); 
-    backdrop-filter: blur(5px); /* Aplicar el efecto de difuminado */   
-}
-
-.links a:hover{
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #2c001b;
-
-}
-
-.logo{
-    margin-top: 2px;
-    margin-left: 30px;
-}
-
-.sector{
-    margin:100px;
-    margin-top: 100px;
-    text-align: center;
-}
-
-.sector a{
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #154472;
-    color: rgb(255, 255, 255);
-    padding: 30px; 
-}
-
-.sector a:hover{
-    background-color: #8aadcf;
-    color: #154472;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    background-color: rgba(0, 0, 0, 0.6); 
-    backdrop-filter: blur(5px);
-}
-
-
-#carouselExampleControlsNoTouching{
+header {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #A60A6C; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px;
 }
 
-.nosotros, .novedades{
-    background-color: #A60A6C;
-    margin: 50px;
+.menu {
+    width: 100%;
 }
 
-.nosotros h3, .novedades h3{
-    color: #ffffff;
-    text-align: center;
-    padding-top: 30px;
-
-}
-
-.nosotros p, .novedades .linea{
-    text-align: center;
-    color: #ffffff;
-}
-
-.noticias{
-    background-color: #ffffff;   
-    margin: 10px;
-    padding: 20px;
-    justify-content: center;
-}
-
-.noticias img{
+nav {
+    width: 200px;
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer{
-    margin-top: 5%;
-    height: 400px;
-    background-color: #565656;
-}
-footer .derechos{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 10px;
+.logo {
+    margin-bottom: 10px;
 }
 
-footer .derechos a{
-    text-decoration: none;
+.logo img{
+    border-radius: 50%; 
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); 
+}
+
+.links {
     list-style: none;
-    color: rgb(255, 255, 255);
+    padding: 0;
+    margin-top: 20px;
 }
 
-footer .derechos a:hover{
-    color: #001020;
+.links a {
+    text-decoration: none;
+    color: #bf9bc0;
+    margin: 30px 40px;
+    display: inline-block;
+    text-align: start;
+    position: relative;
+    border-bottom: solid 1px transparent;
+    transition: all 350ms ease;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
 }
 
-.grid2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-}
-.grid{
-    color: rgb(255, 255, 255);
-    margin-left: 260px ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+.links a:hover{
+    border-bottom: solid 1px #ffffff;
+    color: #ffffff;
 }
 
-.item {
+.menu nav .login{
+    margin-top: 30%;
+}
+
+.generalSectores {
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    overflow-y: scroll; /* Permite el scroll vertical */
+    scrollbar-width: thin; /* Firefox: hace la barra de desplazamiento más delgada */
+    scrollbar-color: transparent transparent; /* Firefox: establece el color de la barra y el fondo de la barra de desplazamiento */
+}
+
+/* Personalización de la barra de desplazamiento en navegadores WebKit */
+.generalSectores::-webkit-scrollbar {
+    width: 0; /* Oculta la barra de desplazamiento */
+    background: transparent; /* Fondo de la barra de desplazamiento */
+}
+
+.sectores {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    justify-content: center;
+    min-height: 100vh; /* Cambia height a min-height para que crezca según sea necesario */
+    width: 95%; /* Ajuste para ocupar un porcentaje del ancho disponible */
+    max-width: 1200px; /* Ancho máximo para evitar que crezca demasiado en pantallas grandes */
+    margin: 30px auto; /* Centrado y margen */
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.sectores h1 {
+    margin: 0; /* Elimina márgenes */
+    padding: 20px; /* Añade un poco de relleno */
+    width: 100%;
     margin-top: 30px;
+    color: #A60A6C;
+    font-family: "Urbanist", sans-serif;
+    text-align: center; /* Centrado del título */
+}
+
+.primerApartado {
+    margin-top: 3%;
+    width: 100%; /* Asegura que el primer apartado ocupe todo el ancho del contenedor */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los apartados */
+}
+
+.sectores .apartado {
+    display: flex;
+    flex-direction: column; /* Coloca el encabezado encima del icono */
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Ajuste del ancho del apartado */
+    height: 150px; /* Ajuste de altura para una mejor visualización */
+    margin: 20px; /* Ajusta el margen para que haya espacio entre los apartados */
+    background-color: #f3f6f8;
+    padding: 20px; /* Reducido para evitar espacios excesivos */
+    border-radius: 10px;
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño total */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para suavizar el efecto */
+}
+
+/* Estilos para los iconos y encabezados */
+.sectores .apartado h3 {
+    margin: 0; /* Elimina márgenes */
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #530033;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+}
+
+.sectores .apartado i {
+    color: #530033;
+    font-size: 50px;
+    transition: transform 0.3s ease; /* Transición para suavizar el efecto en el icono */
+}
+
+/* Efecto dinámico al hacer hover en los apartados */
+.sectores .apartado:hover {
+    transform: scale(1.05); /* Agranda ligeramente el apartado */
+    box-shadow: 0 4px 15px rgba(166, 10, 108, 0.5); /* Añade sombra */
+}
+
+.sectores .apartado:hover i {
+    transform: scale(1.2); /* Agranda el icono dentro del apartado */
+}
+
+/* CARRERAS DE GRADO */
+
+.apartadoGrado {
+    background-color: #a0afbe; /* Color de fondo de cada apartado */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 90%; /* Ancho de cada apartado */
+    margin: 10px 0; /* Espaciado vertical entre los apartados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave para la transformación */
+    position: relative; /* Posición relativa para el efecto de hover */
+}
+
+.apartadoGrado:hover {
+    transform: translateY(-5px); /* Levanta el apartado al hacer hover */
+    box-shadow: 0 8px 30px rgba(166, 10, 108, 0.2); /* Añade sombra más pronunciada al hacer hover */
+}
+
+.apartadoGrado h3 {
+    margin: 0; /* Elimina márgenes */
+    color: #A60A6C; /* Color del texto del encabezado */
+    font-size: 20px; /* Tamaño del texto */
     font-weight: bold;
+}
+
+.apartadoGrado p {
+    margin: 5px 0; /* Margen superior e inferior entre párrafos */
+    color: #ffffff; /* Color del texto del párrafo */
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.btnMostrarMas {
+    background-color: #A60A6C; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+    margin-top: 10px; /* Espacio superior del botón */
+    transition: background-color 0.3s ease; /* Efecto suave para el cambio de color */
+}
+
+.btnMostrarMas:hover {
+    background-color: #530033; /* Color más oscuro al hacer hover */
+}
+
+.btnMostrarMas, .infoExtra{
     font-size: 18px;
 }
 
-.info{
-    margin-left: -60px;
-    font-weight: normal;
-    font-size: 17px;
-}
-.redes{
-    margin-left: -40px;
+.infoExtra {
+    display: none;
+    background-color: #a893a1; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-top: 15px; /* Espacio superior */
+    color: #333; /* Color del texto */
 }
 
-.mapa{
-    margin-left: -105px;
+.infoExtra p {
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 10px 0; /* Margen superior e inferior entre párrafos */
+    font-size: 19px;
 }
-.novedades{
-    margin: auto;
-    justify-content: center;
-    width: 90%;
+
+.infoExtra h4 {
+    font-size: 20px; /* Tamaño del texto del subtítulo */
+    color: #A60A6C; /* Color del subtítulo */
+    margin-top: 15px; /* Margen superior */
 }
+
+.infoExtra ul {
+    list-style-type: disc; /* Estilo de lista con puntos */
+    padding-left: 20px; /* Espacio a la izquierda para la lista */
+}
+
+.infoExtra ul li {
+    margin: 5px 0; /* Margen entre elementos de lista */
+    line-height: 1.5; /* Espaciado en líneas de lista */
+    font-weight: bold;
+}
+
+/* Muestra la información extra al hacer click en el botón */
+.apartadoGrado.open .infoExtra {
+    display: block; /* Muestra el contenido extra */
+}
+
+
+/* --------------------------------------FORMULARIOS LOGIN Y CREAR USUARIO-------------------------------------- */
 
 .body {
     height: 100vh;
     display: flex; /* Activa Flexbox */
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
-    background-color: #ffffff;
-}
-
-.bienvenidoAdmin{
-    display:inline-flex;
-    margin: auto;
-    font-size: 10px;
-    margin-left: 80px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    color: #673f69;
-}
-
-.custom-icon {
-    font-size: 25px;
-    margin-right: 20px;
-}
-
-
-.gestion{
-    display: flex;
-    margin: auto;
-    width: 100%;
-}
-
-.horarios, .alumnos{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
-    background-color: #eee6ee;
-}
-
-.horarios a, .alumnos a{
-    padding: 100px;
-    color: #673f69;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.horarios a:hover, .alumnos a:hover{
-    background-color: #ceafcf;
-}
-
-
-/* --------------------------------------FORMULARIOS LOGIN Y CREAR USUARIO-------------------------------------- */
-.body{
     background-color: #fde4ff;
 }
+
+
 .form-login, .form-crearusuario {
     position: relative;
     display: flex;
@@ -224,6 +266,10 @@ footer .derechos a:hover{
     padding: 30px;
     flex-direction: column;
     border-radius: 10px;
+}
+
+.form-crearusuario{
+    margin-top: 20vh;
 }
 
 .wave {

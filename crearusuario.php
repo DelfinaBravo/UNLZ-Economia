@@ -26,7 +26,7 @@
 
     <!-- Título -->
     <link rel="stylesheet" href="Estilos/style.css">
-    <title>Univerdad de Economía</title>
+    <title>Universidad de Economía</title>
 </head>
 <body class="body">
     <?php 
@@ -35,9 +35,6 @@
         
     ?>
     <!-- Metodología BEM -->
-    <header>
-    
-    </header>
     <main>
         <!-- Formulario para crear usuario -->
         <div class="form-crearusuario">
