@@ -9,7 +9,7 @@ if (!empty($_POST["recuperar"])) {
     $dni = trim($_POST["DNI"]);
 
     // Preparar la consulta para obtener el DNI y la contraseña encriptada del usuario
-    $consulta = $conexion->prepare("SELECT DNI, clave FROM Usuarios WHERE email = ?");
+    $consulta = $conexion->prepare("SELECT DNI, clave FROM usuarios WHERE email = ?");
     $consulta->bind_param("s", $email);
     $consulta->execute();
     $consulta->store_result();

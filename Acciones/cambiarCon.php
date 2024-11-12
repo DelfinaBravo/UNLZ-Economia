@@ -11,7 +11,7 @@ if (!empty($_POST["cambiar"])) {
     // Verificar que las contraseñas coincidan
     if ($claveNueva === $claveNuevaRep) {
         // Preparar la consulta para actualizar la contraseña del usuario
-        $consulta = $conexion->prepare("UPDATE Usuarios SET clave = ? WHERE email = ?");
+        $consulta = $conexion->prepare("UPDATE usuarios SET clave = ? WHERE email = ?");
         $claveNuevaHasheada = password_hash($claveNueva, PASSWORD_DEFAULT);
         $consulta->bind_param("ss", $claveNuevaHasheada, $_SESSION['email']);
         $consulta->execute();

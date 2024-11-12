@@ -25,7 +25,7 @@
 
                 if ($clave == $clave2) { 
                     // Preparar la consulta SQL para verificar si el email ya existe
-                    $stmt = $conexion->prepare("SELECT COUNT(*) AS cantidad FROM Usuarios WHERE email = ?");
+                    $stmt = $conexion->prepare("SELECT COUNT(*) AS cantidad FROM usuarios WHERE email = ?");
                     $stmt->bind_param("s", $email);
                     $stmt->execute();
                     $resultado = $stmt->get_result();
@@ -37,7 +37,7 @@
                         $clavehash = password_hash($clave, PASSWORD_DEFAULT);
 
                         $consulta = $conexion->prepare(
-                            "INSERT INTO Usuarios (DNI, email, nombre, apellido, clave) VALUES (?, ?, ?, ?, ?)"
+                            "INSERT INTO usuarios (DNI, email, nombre, apellido, clave) VALUES (?, ?, ?, ?, ?)"
                         );
                         $consulta->bind_param("sssss", $DNI, $email, $nombre, $apellido, $clavehash);
 
