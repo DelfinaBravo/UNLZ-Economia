@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hora_fin = $_POST['hora_fin'];
     $materia = $_POST['materia'];
     $profesor = $_POST['profesor'];
-
     // Insertamos los datos en la base de datos
     $sql = "INSERT INTO horarios (dia, hora_inicio, hora_fin, materia, profesor) 
             VALUES ('$dia', '$hora_inicio', '$hora_fin', '$materia', '$profesor')";
