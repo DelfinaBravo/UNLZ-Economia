@@ -42,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="Estilos/horarios.css">
 </head>
 <body>
-     <!-- Botón para volver a Index en la parte superior izquierda -->
-     <div class="d-flex justify-content-start mb-4">
+    <!-- Botón para volver a Index en la parte superior izquierda -->
+    <div class="d-flex justify-content-start mb-4">
             <a href="index.html" class="btn-volver">Volver a Inicio</a>
         </div>
     <div class="container mt-5">
