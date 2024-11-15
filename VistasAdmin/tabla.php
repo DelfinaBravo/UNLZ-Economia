@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <!-- Botón para volver a Index en la parte superior izquierda -->
     <div class="d-flex justify-content-start mb-4">
-            <a href="index.html" class="btn-volver">Volver a Inicio</a>
+            <a href="inicioA.php" class="btn-volver">Volver a Inicio</a>
     </div>
     <div class="container mt-5">
 
