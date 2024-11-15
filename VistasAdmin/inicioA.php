@@ -59,6 +59,7 @@
                 <input type="submit" value="Enviar" name="seleccion">
                 
             </form>
+            <a href="tabla.php">Horarios y Materias</a>
         </div>
         
            
