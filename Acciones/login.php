@@ -27,7 +27,7 @@ if (!empty($_POST["ingresar"])) {
         if ($row["validacion"] != 0) {
             $_SESSION['email'] = $email;
             $_SESSION['nombre_completo'] = $row["nombre_completo"];
-            header("Location: ../VistasAdmin/inicioA.php");
+            header("Location: VistasAdmin/inicioA.php");
             exit();
         } else {
             echo "No tienes permisos para acceder.";

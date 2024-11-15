@@ -1,6 +1,9 @@
 <?php session_start();?>
 <!DOCTYPE html>
 <html lang="es">
+<?php
+    include('../Acciones/auth.php');
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,19 +47,21 @@
         </div>
     </header>
     <main>
-        <div class="bienvenida">
-            <div class="bienvenidoAdmin"> <i class="fa-solid fa-user-tie custom-icon"></i>
-            <h1>Bienvenido Administrador <?php echo $_SESSION['nombre_completo'];?> </h1></div>
-            <div class="gestion">
-                <div class="horarios">
-                    <a href="">HORARIOS</a>
-                </div>
-
-                <div class="alumnos">
-                    <a href="">ALUMNOS</a>
-                </div>
-            </div>
+    <div class="bienvenida"></div>
+            <h1>Bienvenido Administrador <?php echo $_SESSION['nombre_completo'];?> </h1>
+            <h1>Selecciona un Valor</h1>
+            <form action="" method="POST">
+                <label for="valor">Elige un valor:</label>
+                <select id="valor" name="valor" required>
+                    <option value="verificado" name="valor">verificados</option>
+                    <option value="no verificado" name="valor">No verificados</option>
+                </select>
+                <input type="submit" value="Enviar" name="seleccion">
+                
+            </form>
         </div>
+        
+           
        
     </main>
     <footer>
