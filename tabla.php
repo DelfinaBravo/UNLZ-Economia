@@ -9,8 +9,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión
 if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
+    echo"Error en codigo mysqli o conexion";
 }
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Capturamos los datos del formulario
