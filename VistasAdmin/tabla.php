@@ -3,14 +3,14 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "ecounlz";
-
+ 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    echo"Error en codigo mysqli o conexion";
+    echo "Error en codigo mysqli o conexion";
 }
 
 
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Botón para volver a Index en la parte superior izquierda -->
     <div class="d-flex justify-content-start mb-4">
             <a href="index.html" class="btn-volver">Volver a Inicio</a>
-        </div>
+    </div>
     <div class="container mt-5">
 
         <h1 class="text-center mb-4">Formulario de Horarios y Materias</h1>
