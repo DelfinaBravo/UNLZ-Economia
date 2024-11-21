@@ -69,7 +69,21 @@
                         </div>
                     </form>
             </div>
+            <script>
+    document.querySelector('form').addEventListener('submit', function (event) {
+        const traerEmail = document.getElementById('Email');
+        const email = traerEmail.value;
+
+        const dominiosValidos = /@(gmail|yahoo|hotmail)\.com$/i;
+        if (!dominiosValidos.test(email)) {
+            event.preventDefault();
+            alert("Por favor, ingresa un correo electrónico válido con dominio Gmail, Yahoo o Hotmail.");
+            traerEmail.focus();
+        }
+    });
+    </script>
     </main>
+
     <!-- <footer>
         <div>
         <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
