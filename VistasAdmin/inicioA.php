@@ -1,4 +1,23 @@
-<?php session_start();?>
+<?php
+session_start();
+
+if(!isset($_SESSION['email'])){
+    echo '
+        <script>
+            alert("Debes iniciar sesion antes de entrar a esta pagina");
+            window.location = "../index.html"; 
+        </script>';
+    session_destroy();
+    die();
+}
+
+if (isset($_POST['cerrar'])) {
+  session_destroy();
+  header("location:../index.html");
+  
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <?php
@@ -40,9 +59,9 @@
         <div class="menu">
             <nav>
                 <a class="logo" href="index.html"><img src="../Media/logoUNLZ.jpeg" alt="logoUNLZ" width="75px"></a>
-                    <ul class="links">
-                        <a href="">Salir</a>
-                    </ul>
+                <form id="form-cerrar-sesion" class="form-sesion" action="" method="post">
+                    <input type="submit" value="Cerrar Sesión" name="cerrar" >
+                </form>
             </nav>
         </div>
     </header>
