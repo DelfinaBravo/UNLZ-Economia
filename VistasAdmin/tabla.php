@@ -1,4 +1,22 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['email'])){
+    echo '
+        <script>
+            alert("Debes iniciar sesion antes de entrar a esta pagina");
+            window.location = "../index.html"; 
+        </script>';
+    session_destroy();
+    die();
+}
+
+if (isset($_POST['cerrar'])) {
+  session_destroy();
+  header("location:../index.html");
+  
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -47,6 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="d-flex justify-content-start mb-4">
             <a href="inicioA.php" class="btn-volver">Volver a Inicio</a>
     </div>
+    <form id="form-cerrar-sesion" class="form-sesion" action="" method="post">
+        <input type="submit" value="Cerrar Sesión" name="cerrar" >
+    </form>
     <div class="container mt-5">
 
         <h1 class="text-center mb-4">Formulario de Horarios y Materias</h1>
