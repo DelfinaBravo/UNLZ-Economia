@@ -34,10 +34,6 @@
     <?php 
         include("Acciones/recuperarCon.php");
     ?>
-    <!-- Metodología BEM -->
-    <header>
-
-    </header>
     <main>
             <!-- Formulario de Logueo -->
             <div class="form-login">
@@ -62,7 +58,7 @@
                        
                         <div class="botonusu">
                                 <!-- Botón -->
-                            <input class="botonusuario" type="submit" value="cambiar contraseña" name="recuperar">
+                            <input class="botonusuario" type="submit" value="Restablecer" name="recuperar">
                         </div>
                         
                     </form>
@@ -81,10 +77,5 @@
     });
     </script>
     </main>
-    <!-- <footer>
-        <div>
-        <p>&copy; 2024 Grupo de estudiantes de la Técnica N*1 de Esteban Echeverría. Todos los derechos reservados.</p>
-        </div>
-    </footer> -->
 </body>
 </html>
